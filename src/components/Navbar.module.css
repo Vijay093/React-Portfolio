@@ -1,0 +1,23 @@
+.header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 1px 8px #ddd;
+}
+
+.nav_title {
+    margin-right: auto;
+    font-size: 1.5em;
+}
+
+.header a {
+    text-decoration: none;
+} 
