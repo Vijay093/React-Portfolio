@@ -7,6 +7,7 @@ export default function Introduction() {
     <div className={classes.div}>
       <div className={classes.intro}>
         <img src={image} alt="profile picture" />
+        <div className={classes.info}>
         <h2>
           Hey I Am Vijay, {" "}
           <ReactTyped
@@ -21,6 +22,11 @@ export default function Introduction() {
             showCursor={true}
           />
         </h2>
+        <div className={classes.buttons}>
+        <button className={classes.button}>Contact Me</button>
+        <button className={classes.button_text}>Go To Github</button>
+        </div>
+        </div>
       </div>
     </div>
   );

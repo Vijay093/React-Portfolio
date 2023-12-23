@@ -1,26 +1,38 @@
-.header li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 20px;
+.slider {
+    width: 75%;
+    margin: auto;
 }
 
-.header {
+.box {
+    margin-top: 200px;
+}
+
+.project {
+    border-radius: 12px;
+    background-color: black;
+    color: whitesmoke;
+    height: 450px;
+}
+
+.image {
     display: flex;
-    justify-content: flex-end;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 20px 50px;
-    box-shadow: 0 1px 8px #ddd;
 }
 
-.nav_title {
-    margin-right: auto;
-    font-size: 1.5em;
+.img {
+    height: 260px;
+    width: 100%;
 }
 
-.header a {
-    text-decoration: none;
-} 
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    padding: 0 16px;
+}
 
 .button {
     font: inherit;

@@ -7,7 +7,7 @@ export default function Navbar() {
       <nav>
         <ul>
           <li>
-            <a>Resume</a>
+            <button className={classes.button}>Resume</button>
           </li>
           <li>
             <a>About</a>
