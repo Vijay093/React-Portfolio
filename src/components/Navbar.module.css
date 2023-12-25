@@ -40,3 +40,19 @@
     color: #fff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   }
+
+  .button_text {
+    font: inherit;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    border: none;
+    color: #3f0c26;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .button_text:hover {
+    color: #7c184c;
+  }

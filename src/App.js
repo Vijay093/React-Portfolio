@@ -1,8 +1,11 @@
 import './App.css';
-import About from './components/About';
-import Introduction from './components/Introduction';
+// import About from './components/About';
+// import Certification from './components/Certification';
+// import Contact from './components/Contact';
+// import Introduction from './components/Introduction';
 import Navbar from './components/Navbar';
-import Projects from './components/Projects';
+// import Projects from './components/Projects';
+// import Skills from './components/Skills';
 
 function App() {
   return (
@@ -10,7 +13,10 @@ function App() {
       <Navbar />
       {/* <Introduction /> */}
       {/* <Projects /> */}
-      <About />
+      {/* <About /> */}
+      {/* <Skills /> */}
+      {/* <Contact /> */}
+      {/* <Certification /> */}
     </>
   );
 }

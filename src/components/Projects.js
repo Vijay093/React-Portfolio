@@ -2,7 +2,6 @@ import classes from "./Projects.module.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import image from "../assets/vijay.jpg";
 
 export default function Projects() {
     const settings = {
@@ -13,6 +12,9 @@ export default function Projects() {
         slidesToScroll: 1
     }
   return (
+    <>
+    <p className={classes.p}>Browse My Recent</p>
+    <h1 className={classes.h1}>Projects</h1>
     <div className={classes.slider}>
       <div className={classes.box}>
         <Slider {...settings}>
@@ -31,6 +33,7 @@ export default function Projects() {
         </Slider>
       </div>
     </div>
+    </>
   );
 }
 

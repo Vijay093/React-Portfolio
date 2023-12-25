@@ -23,7 +23,7 @@ export default function About() {
             <div className={classes.detailsContainer}>
               <img className={classes.icon} src={education} />
               <h3>Education</h3>
-              <p>B.Tech <br /> Computer Science and Engineering <br /> PES University, Bengaluru</p>
+              <p>B.Tech <br /> Computer Science and Engineering <br /> PES University, Bengaluru <br /> 7.69 CGPA </p>
             </div>
           </div>
           <div className={classes.textContainer}>

@@ -2,13 +2,19 @@
     width: 80%;
     height: 70vh;
     margin: auto;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
 
 .intro {
-    margin-top: 100px;
     display: flex;
-    gap: 50px;
-    justify-content:flex-start;
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .intro img {
@@ -19,13 +25,7 @@
 
 .intro h2 {
     font-family: sans-serif;
-    margin-top: 100px;
-    /* margin-bottom: auto; */
-}
-
-.info {
-  display: flex;
-  flex-direction: column;
+    font-weight: 100;
 }
 
 .button {
@@ -39,6 +39,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.26);
     font-weight: bold;
     text-decoration: none;
+    font-size: large;
   }
   
   .button:hover {
@@ -67,3 +68,19 @@
     display: flex;
     gap: 20px;
   }
+
+  .button_text a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .button a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+.icon {
+  height: 30px;
+  width: 30px;
+  cursor: default;
+}
