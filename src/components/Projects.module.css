@@ -66,3 +66,8 @@
     font-weight: bold;
     font-size: xx-large;
 }
+
+.button a {
+    text-decoration: none;
+    color: white;
+}

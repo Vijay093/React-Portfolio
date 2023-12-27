@@ -1,28 +1,138 @@
-.header li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 20px;
-}
-
 .header {
-    display: flex;
-    justify-content: flex-end;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    box-shadow: 0 1px 8px #ddd;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  box-shadow: 0 1px 8px #ddd;
+  z-index: 1000;
+  /* background-color: #fff; */
 }
 
 .nav_title {
-    margin-right: auto;
-    font-size: 1.5em;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
-.header a {
-    text-decoration: none;
-} 
+.navbar ul {
+  list-style: none;
+}
 
-.button {
+.navbar ul li {
+  cursor: pointer;
+  position: relative;
+  float: left;
+}
+
+.navbar ul li button {
+  padding: 20px;
+  display: block;
+  font-size: large;
+  margin-right: 10px;
+}
+
+.navbar ul li button:hover {
+  /* color: #fff; */
+  border-bottom: 3px solid red;
+  /* background: #333; */
+}
+
+.navbar ul li ul {
+  padding-inline-start: 0;
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 200px;
+  background: #fff;
+  display: none;
+}
+
+.navbar ul li ul li {
+  width: 100%;
+  font-size: larger;
+  z-index: 999;
+  /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
+}
+
+.navbar ul li ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar ul li:hover > ul {
+  display: initial;
+}
+
+.header button {
+  border: none;
+  background-color: #fff;
+}
+
+.inputForHamburger{
+  display: none;
+}
+
+.header img {
+  height: 30px;
+  width: 30px;
+}
+
+.header label {
+  cursor: pointer;
+  display: none;
+}
+
+
+@media (max-width: 1100px) {
+  .header {
+    padding: 20px;
+  }
+
+  .header label {
+    display: initial;
+  }
+
+  .navbar ul li button:hover{
+    border-bottom: none;
+  }
+
+  .dropDown {
+    display: none;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border-top: 1px solid rgba(0 , 0, 0, 0.1);
+    background: #fff;
+    display: none;
+  }
+
+  .navbar ul li {
+    width: 100%;
+  }
+
+  /* .navbar ul li ul{
+    position: relative;
+    width: 100%;
+  } */
+
+  /* .navbar ul li ul li {
+    background: #eee;
+  } */
+
+  .inputForHamburger:checked ~ .navbar {
+    display: initial;
+  }
+}
+
+
+/* .button {
     font: inherit;
     cursor: pointer;
     padding: 0.5rem 1.5rem;
@@ -55,4 +165,4 @@
   
   .button_text:hover {
     color: #7c184c;
-  }
+  } */

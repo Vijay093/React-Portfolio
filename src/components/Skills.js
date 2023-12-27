@@ -1,14 +1,15 @@
 import classes from "./Skills.module.css";
 import check from "../assets/check.png";
-
+import { motion } from "framer-motion";
 export default function Skills() {
   return (
     <>
-      <div className={classes.conatiner}>
+    <div>
+      <div className={classes.container}>
         <p className={classes.p}>Explore My</p>
         <h1 className={classes.heading}>Skillsets</h1>
       </div>
-      <div className={classes.skillsContainer}>
+      <motion.div initial={{opacity:0, y:-60}} animate={{opacity:1, y:0}} className={classes.skillsContainer}>
         <div className={classes.compartment}>
             <article className={classes.skill}>
               <img src={check} alt="tick-mark" className={classes.icon} />
@@ -99,6 +100,7 @@ export default function Skills() {
         </div>
         {/* <div className={classes.compartment}></div>
         <div className={classes.compartment}></div> */}
+      </motion.div>
       </div>
     </>
   );

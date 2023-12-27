@@ -6,6 +6,8 @@ import Contact from "./Contact";
 import Introduction from "./Introduction";
 import Projects from "./Projects";
 import Skills from "./Skills";
+import hamburger from "../assets/hamburger.png";
+import { motion } from "framer-motion";
 
 export default function Navbar() {
   const [content, setContent] = useState("introduction");
@@ -35,7 +37,7 @@ export default function Navbar() {
     visible = <Contact />;
   }
   return (
-    <>
+    <div>
       <header className={classes.header}>
         <button
           onClick={() => {
@@ -45,84 +47,128 @@ export default function Navbar() {
         >
           <h1 className={classes.nav_title}>Vijay Kumar M R</h1>
         </button>
-        <nav>
+        <input
+          type="checkbox"
+          id="hamburger"
+          className={classes.inputForHamburger}
+        ></input>
+        <label htmlFor="hamburger">
+          <img src={hamburger} />
+        </label>
+        <nav className={classes.navbar}>
           <ul>
             <li>
-              <button onClick={handleDownload} className={classes.button}>
-                Resume
-              </button>
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 500 }}
+                onClick={handleDownload}
+                className={classes.button}
+              >
+                <a>Resume</a>
+              </motion.button>
             </li>
             <li>
-              <button
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 500 }}
                 onClick={() => {
                   setContent("about");
                 }}
                 className={classes.button_text}
               >
                 <a>About</a>
-              </button>
+              </motion.button>
             </li>
             <li>
-              <button
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 500 }}
                 onClick={() => {
                   setContent("portfolio");
                 }}
                 className={classes.button_text}
               >
                 <a>Portfolio</a>
-              </button>
+              </motion.button>
             </li>
             <li>
-              <button
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 500 }}
                 onClick={() => {
                   setContent("skill");
                 }}
                 className={classes.button_text}
               >
                 <a>Skills</a>
-              </button>
+              </motion.button>
             </li>
             <li>
-              <button
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 500 }}
                 onClick={() => {
                   setContent("certification");
                 }}
                 className={classes.button_text}
               >
                 <a>Certifications</a>
-              </button>
+              </motion.button>
             </li>
-            {/* <li>
-            <a>Links</a>
-            <ul className={classes.dropdown}>
-              <li>
-                <a href="#">Blog Website</a>
-              </li>
-              <li>
-                <a href="#">All in One Website</a>
-              </li>
-              <li>
-                <a href="#">Weather Application</a>
-              </li>
-              <li>
-                <a href="#">Quiz Application</a>
-              </li>
-            </ul>
-          </li> */}
+            <li className={classes.dropDown}>
+              <motion.button>
+                <a>Links</a>
+              </motion.button>
+              <ul>
+                <li>
+                  <button>
+                    <a href="https://vijay-blog.onrender.com/" target="_blank">
+                      Blog Website
+                    </a>
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    <a
+                      href="https://all-in-one-v83r.onrender.com/"
+                      target="_blank"
+                    >
+                      All in One Website
+                    </a>
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    <a href="#" target="_blank">
+                      Weather Application
+                    </a>
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    <a href="https://quiz-j96q.onrender.com/" target="_blank">
+                      Quiz Application
+                    </a>
+                  </button>
+                </li>
+              </ul>
+            </li>
             <li>
-              <button
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 500 }}
                 onClick={() => {
                   setContent("contact");
                 }}
                 className={classes.button_text}
               >
                 <a>Contact</a>
-              </button>
+              </motion.button>
             </li>
           </ul>
         </nav>
       </header>
       {visible}
-    </>
+    </div>
   );
 }
