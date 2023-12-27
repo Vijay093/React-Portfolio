@@ -1,5 +1,5 @@
 import classes from "./Introduction.module.css";
-// import ReactTyped from "react-typed";
+import ReactTyped from "react-typed";
 import image from "../assets/vijay.jpg";
 import email from "../assets/email.png";
 import linkedin from "../assets/linkedin.png";
@@ -26,7 +26,7 @@ export default function Introduction() {
           <br />{" "}
         </motion.h2>
         <motion.h2 initial={{opacity:0, y:-30}} animate={{opacity:1, y:0}}>
-          {/* <ReactTyped
+          <ReactTyped
             strings={["Full Stack Web Developer", "Python Developer"]}
             typeSpeed={50}
             loop
@@ -34,7 +34,7 @@ export default function Introduction() {
             cursorChar=">"
             showCursor={true}
             className={classes.dynamicTyping}
-          /> */}
+          />
             Full Stack Web Developer
         </motion.h2>
         <motion.div initial={{opacity:0, y:-30}} animate={{opacity:1, y:0}} className={classes.buttons}>
