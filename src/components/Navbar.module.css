@@ -103,6 +103,10 @@
     display: none;
   }
 
+  .hideMenu {
+    display: none;
+  }
+
   .navbar {
     position: absolute;
     top: 100%;
@@ -128,6 +132,10 @@
 
   .inputForHamburger:checked ~ .navbar {
     display: initial;
+  }
+
+  .inputForHamburger:checked .button_text:active ~ .navbar {
+    display: none;
   }
 }
 

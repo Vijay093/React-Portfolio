@@ -35,7 +35,6 @@ export default function Introduction() {
             showCursor={true}
             className={classes.dynamicTyping}
           />
-            Full Stack Web Developer
         </motion.h2>
         <motion.div initial={{opacity:0, y:-30}} animate={{opacity:1, y:0}} className={classes.buttons}>
           <motion.button
@@ -56,30 +55,36 @@ export default function Introduction() {
           </button>
         </motion.div>
         <motion.div initial={{opacity:0, y:-30}} animate={{opacity:1, y:0}} className={classes.socials}>
+        <a href="https://www.linkedin.com/in/vijay-m-r-424b8818a/" target="_blank">
           <motion.img
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 500 }}
             src={linkedin}
             alt="linkedin profile"
             className={classes.icon}
-            onClick="location.href='https://www.linkedin.com/in/vijay-m-r-424b8818a/'"
+            // onClick="location.href='https://www.linkedin.com/in/vijay-m-r-424b8818a/'"
           />
+        </a>
+        <a href="https://github.com/Vijay093?tab=repositories" target="_blank">
           <motion.img
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 500 }}
             src={github}
             alt="github profile"
             className={classes.icon}
-            onClick="location.href='mailto:vijay.rathnappa42@gmail.com'"
+            // onClick="location.href='mailto:vijay.rathnappa42@gmail.com'"
           />
+        </a>
+        <a href="mailto:vijay.rathnappa42@gmail.com">
           <motion.img
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 500 }}
             src={email}
             alt="email profile"
             className={classes.icon}
-            onClick="location.href='https://github.com/Vijay093?tab=repositories'"
+            // onClick="location.href='https://github.com/Vijay093?tab=repositories'"
           />
+        </a>
         </motion.div>
       </motion.div>
     </div>

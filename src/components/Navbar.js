@@ -11,6 +11,9 @@ import { motion } from "framer-motion";
 
 export default function Navbar() {
   const [content, setContent] = useState("introduction");
+  const closeMenu = () => {
+    document.getElementById('hamburger').checked = false;
+  }
 
   const handleDownload = () => {
     const pdfUrl = "resume.pdf";
@@ -61,7 +64,10 @@ export default function Navbar() {
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: "spring", stiffness: 500 }}
-                onClick={handleDownload}
+                onClick={() => {
+                  handleDownload();
+                  closeMenu();
+                }}
                 className={classes.button}
               >
                 <a>Resume</a>
@@ -73,8 +79,8 @@ export default function Navbar() {
                 transition={{ type: "spring", stiffness: 500 }}
                 onClick={() => {
                   setContent("about");
+                  closeMenu();
                 }}
-                className={classes.button_text}
               >
                 <a>About</a>
               </motion.button>
@@ -85,6 +91,7 @@ export default function Navbar() {
                 transition={{ type: "spring", stiffness: 500 }}
                 onClick={() => {
                   setContent("portfolio");
+                  closeMenu();
                 }}
                 className={classes.button_text}
               >
@@ -97,6 +104,7 @@ export default function Navbar() {
                 transition={{ type: "spring", stiffness: 500 }}
                 onClick={() => {
                   setContent("skill");
+                  closeMenu();
                 }}
                 className={classes.button_text}
               >
@@ -109,6 +117,7 @@ export default function Navbar() {
                 transition={{ type: "spring", stiffness: 500 }}
                 onClick={() => {
                   setContent("certification");
+                  closeMenu();
                 }}
                 className={classes.button_text}
               >
@@ -159,6 +168,7 @@ export default function Navbar() {
                 transition={{ type: "spring", stiffness: 500 }}
                 onClick={() => {
                   setContent("contact");
+                  closeMenu();
                 }}
                 className={classes.button_text}
               >
