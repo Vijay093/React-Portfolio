@@ -148,7 +148,7 @@ export default function Navbar() {
                 </li>
                 <li>
                   <button>
-                    <a href="#" target="_blank">
+                    <a href="https://weather-api-z6s6.onrender.com" target="_blank">
                       Weather Application
                     </a>
                   </button>

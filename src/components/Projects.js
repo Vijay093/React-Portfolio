@@ -55,7 +55,7 @@ const data = [
   },
   {
     name: "React Project Management",
-    image: `/projects/`,
+    image: `/projects/project_managment.png`,
     content: "A basic react app to manage projects.",
     url:"",
   },

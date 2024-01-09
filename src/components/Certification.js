@@ -70,5 +70,11 @@ const data = [
     image: "/certificates/react-js.jpg",
     content: "Instructors: Maximilian Schwarzmuller",
     link:"https://www.udemy.com/certificate/UC-68d35d55-c7f9-4acc-bc2c-431fd18624ab/"
+  },
+  {
+    name: "Responsive Web Design",
+    image: "/certificates/responsive-web-design.jpg",
+    content: "freeCodeCamp.org",
+    link:"https://freecodecamp.org/certification/Vijay-Kumar-MR/responsive-web-design"
   }
 ];
